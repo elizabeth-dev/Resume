@@ -1,0 +1,14 @@
+@import '../variables';
+
+.root {
+	align-self: stretch;
+
+	margin: 0 $right-margin;
+	border-bottom: 1mm solid $primary-blue;
+	padding: 1.3mm 0;
+	.text {
+		color: rgba(0, 0, 0, 0.87);
+		font-size: 22px;
+		text-transform: uppercase;
+	}
+}

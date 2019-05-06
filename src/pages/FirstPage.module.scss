@@ -1,0 +1,10 @@
+@import '../variables';
+
+.root {
+	.name {
+		font-size: 18pt;
+		font-weight: bold;
+		color: $primary-blue;
+		margin-left: 6mm;
+	}
+}
