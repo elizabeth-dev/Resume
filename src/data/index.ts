@@ -22,7 +22,7 @@ export const description =
 
 export const experience: ISectionData[] = [
 	{
-		title: 'Desarrolladora web en prácticas',
+		title: 'Desarrolladora web',
 		info: [
 			{ icon: mdiCalendar, text: 'Octubre 2018 - actualidad' },
 			{ icon: mdiDomain, text: 'Informática El Corte Inglés S.A.' },
