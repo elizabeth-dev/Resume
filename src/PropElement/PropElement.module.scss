@@ -1,0 +1,22 @@
+@import '../variables';
+
+.root {
+	flex: 0 1 33.33%;
+	display: flex;
+	align-items: center;
+
+	margin: 1mm 0;
+	svg {
+		fill: $primary-blue;
+	}
+	.title {
+		color: $primary-black;
+		margin-left: 1mm;
+		font-size: 14pt;
+	}
+	.subtitle {
+		color: $secondary-black;
+		margin-left: 1.5mm;
+		align-self: flex-end;
+	}
+}

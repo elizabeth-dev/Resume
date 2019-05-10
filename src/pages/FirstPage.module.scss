@@ -2,9 +2,15 @@
 
 .root {
 	.name {
-		font-size: 18pt;
+		font-size: 20pt;
 		font-weight: bold;
 		color: $primary-blue;
-		margin-left: 6mm;
+		margin-left: $left-margin;
+	}
+	.description {
+		color: $primary-black;
+		margin: $section-vertical-margin $left-margin * 2;
+		margin-top: 0;
+		font-weight: 300;
 	}
 }

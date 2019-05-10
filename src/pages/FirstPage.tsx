@@ -1,24 +1,12 @@
 import React from 'react';
 import styles from './FirstPage.module.scss';
 
-import { mdiHome, mdiPhone, mdiEmail, mdiWeb } from '@mdi/js';
-
 import Page from '../Page';
 import PersonalData from '../PersonalData';
 import DataElement from '../DataElement';
-import SectionTitle from '../SectionTitle';
-import TrainingSection from '../sections/TrainingSection';
-
-const personalData: { icon: string; content: string }[] = [
-	{ icon: mdiHome, content: 'Madrid, España' },
-	{ icon: mdiPhone, content: '611490147' },
-	{ icon: mdiEmail, content: 'eli@zabeth.es' },
-	{ icon: mdiWeb, content: 'https://eli.zabeth.es/' },
-];
-
-const trainingData: { title: string }[] = [
-	{ title: 'Técnico Superior en Administración de Sistemas Informáticos en Red' },
-];
+import SectionItem from '../SectionItem';
+import { personalData, experience, trainingData, description } from '../data';
+import Section from '../Section';
 
 const FirstPage: React.FC = () => {
 	return (
@@ -31,10 +19,17 @@ const FirstPage: React.FC = () => {
 					</DataElement>
 				))}
 			</PersonalData>
-			<SectionTitle>Formación</SectionTitle>
-			{trainingData.map((data) => (
-				<TrainingSection title={data.title} key={data.title} />
-			))}
+			<p className={styles.description}>{description}</p>
+			<Section title="Experiencia">
+				{experience.map((item) => (
+					<SectionItem title={item.title} info={item.info} key={item.title} />
+				))}
+			</Section>
+			<Section title="Formación">
+				{trainingData.map((data) => (
+					<SectionItem title={data.title} info={data.info} key={data.title} />
+				))}
+			</Section>
 		</Page>
 	);
 };

@@ -1,0 +1,17 @@
+@import '../variables';
+
+.root {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+
+	margin-top: $section-vertical-margin / 2;
+	.tags {
+		align-self: stretch;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+
+		margin: $section-vertical-margin $left-margin;
+	}
+}

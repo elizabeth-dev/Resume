@@ -2,7 +2,11 @@ $a4-width: 21cm;
 $a4-height: 29.7cm;
 
 $left-margin: 5mm;
-$right-margin: $left-margin;
+$right-margin: $left-margin * 2;
 $vertical-margin: 9mm;
 
 $primary-blue: rgb(97, 121, 170);
+$primary-black: rgba(0, 0, 0, 0.87);
+$secondary-black: rgba(0, 0, 0, 0.54);
+
+$section-vertical-margin: 5mm;
