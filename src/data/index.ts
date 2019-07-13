@@ -18,7 +18,7 @@ export const personalData: IPersonalData[] = [
 ];
 
 export const description =
-	'Tengo experiencia tanto en el desarrollo como en el despliegue de aplicaciones con tecnologías web. Aunque me especializo en el diseño de interfaces de usuario y el uso de frameworks de front-end como React.js o Angular, tengo conocimientos para desarrollar plataformas de back-end (APIs REST, microservicios, websockets...) en entornos como Node.js, PHP, Python y ciertas nociones de Java. Además de como desarrolladora, también poseo habilidades en la gestión de servidores y redes, tanto en entornos Windows como GNU/Linux.';
+	'Me especializo en el diseño de UI y el uso de frameworks de front-end como React.js o Angular, además, tengo conocimientos para desarrollar plataformas de back-end (APIs REST, microservicios, websockets...) en entornos como Node.js y ciertas nociones de Java. Además de como desarrolladora, también poseo habilidades en la gestión de servidores y redes, tanto en entornos Windows como GNU/Linux.';
 
 export const experience: ISectionData[] = [
 	{
@@ -28,37 +28,51 @@ export const experience: ISectionData[] = [
 			{ icon: mdiDomain, text: 'Informática El Corte Inglés S.A.' },
 		],
 	},
-	// {
-	// 	title: 'Desarrolladora front-end',
-	// 	info: [
-	// 		{ icon: mdiCalendar, text: 'Mayo 2019- actualidad' },
-	// 		{ icon: mdiDomain, text: 'Nekuno S.L.' },
-	// 	],
-	// },
+	{
+		title: 'Desarrolladora front-end',
+		info: [
+			{ icon: mdiCalendar, text: 'Mayo 2019- actualidad' },
+			{ icon: mdiDomain, text: 'Nekuno S.L.' },
+		],
+	},
 ];
 
 export const trainingData: ISectionData[] = [
 	{
+		title: 'Grado en Ingeniería Informática',
+		info: [
+			{
+				icon: mdiCalendar,
+				text: 'Septiembre 2019 - Mayo 2025 (cursando)',
+			},
+			{
+				icon: mdiSchool,
+				text: 'Universidad Nacional de Educación a Distancia',
+			},
+		],
+	},
+	{
 		title: 'Técnico Superior en Desarrollo de Aplicaciones Web',
 		info: [
-			{ icon: mdiCalendar, text: 'Mayo 2019 - Junio 2019 (cursando)' },
+			{ icon: mdiCalendar, text: 'Mayo 2019 - Junio 2020 (cursando)' },
 			{ icon: mdiSchool, text: 'Pruebas libres, IES El Cañaveral' },
 		],
 	},
 	{
-		title: 'Técnico Superior en Administración de Sistemas Informáticos en Red',
+		title:
+			'Técnico Superior en Administración de Sistemas Informáticos en Red',
 		info: [
 			{ icon: mdiCalendar, text: 'Septiembre 2017 - Mayo 2019' },
 			{ icon: mdiSchool, text: 'IES Clara del Rey' },
 		],
 	},
-	{
+	/* {
 		title: 'Título de Bachillerato',
 		info: [
 			{ icon: mdiCalendar, text: 'Septiembre 2015 - Mayo 2017' },
 			{ icon: mdiSchool, text: 'IES Andrés Bello, Tenerife' },
 		],
-	},
+	}, */
 ];
 
 export const certData: ISectionData[] = [
@@ -93,7 +107,7 @@ export const knowledge: { title: string }[] = [
 	{ title: 'SQL' },
 	{ title: 'React Native' },
 	{ title: 'GNU/Linux' },
-	{ title: 'Python 3' },
+	{ title: 'CI/CD' },
 	{ title: 'Cloud computing' },
 	{ title: 'PHP 7' },
 	{ title: 'Kubernetes' },

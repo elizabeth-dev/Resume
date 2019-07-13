@@ -9,8 +9,7 @@
 	}
 	.description {
 		color: $primary-black;
-		margin: $section-vertical-margin $left-margin * 2;
-		margin-top: 0;
+		margin: 0 $left-margin 0 $left-margin * 2;
 		font-weight: 300;
 	}
 }
