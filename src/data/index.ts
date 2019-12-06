@@ -22,17 +22,10 @@ export const description =
 
 export const experience: ISectionData[] = [
 	{
-		title: 'Desarrolladora web',
+		title: 'Desarrolladora Web Full-stack',
 		info: [
 			{ icon: mdiCalendar, text: 'Octubre 2018 - actualidad' },
 			{ icon: mdiDomain, text: 'Informática El Corte Inglés S.A.' },
-		],
-	},
-	{
-		title: 'Desarrolladora front-end',
-		info: [
-			{ icon: mdiCalendar, text: 'Mayo 2019- actualidad' },
-			{ icon: mdiDomain, text: 'Nekuno S.L.' },
 		],
 	},
 ];
@@ -66,16 +59,20 @@ export const trainingData: ISectionData[] = [
 			{ icon: mdiSchool, text: 'IES Clara del Rey' },
 		],
 	},
-	/* {
+	{
 		title: 'Título de Bachillerato',
 		info: [
 			{ icon: mdiCalendar, text: 'Septiembre 2015 - Mayo 2017' },
 			{ icon: mdiSchool, text: 'IES Andrés Bello, Tenerife' },
 		],
-	}, */
+	},
 ];
 
 export const certData: ISectionData[] = [
+	{
+		title: 'Google Professional Cloud Architect',
+		info: [{ icon: mdiCalendar, text: 'Diciembre 2019 - Diciembre 2021' }],
+	},
 	{
 		title: 'Olimpiadas nacionales de FP. Medalla de plata.',
 		info: [
@@ -109,7 +106,7 @@ export const knowledge: { title: string }[] = [
 	{ title: 'GNU/Linux' },
 	{ title: 'CI/CD' },
 	{ title: 'Cloud computing' },
-	{ title: 'PHP 7' },
+	{ title: 'CQRS' },
 	{ title: 'Kubernetes' },
 	{ title: 'Programación reactiva' },
 	{ title: 'Node.js' },
