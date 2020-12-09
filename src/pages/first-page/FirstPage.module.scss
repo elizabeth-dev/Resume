@@ -1,0 +1,16 @@
+@import 'src/shared/styles/variables';
+
+.root {
+	.name {
+		font-size: 20pt;
+		font-weight: 600;
+		color: $primary-blue;
+		margin-left: $left-margin;
+	}
+	.description {
+		color: $primary-black;
+		margin: 0 $left-margin 0 $left-margin * 2;
+		font-weight: 300;
+		text-align: center;
+	}
+}

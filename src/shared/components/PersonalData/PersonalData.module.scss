@@ -1,0 +1,21 @@
+@import 'src/shared/styles/variables';
+
+$container-radius: 8mm;
+$vertical-margin: 7mm;
+
+.root {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+
+	padding: 7mm;
+	// margin: $vertical-margin 0 $vertical-margin $left-margin;
+	margin: $vertical-margin 0 $vertical-margin $left-margin;
+	border: 0.35mm solid $primary-blue;
+	border-right: none;
+	border-radius: $container-radius 0 0 $container-radius;
+	.keys {
+		display: flex;
+		flex-direction: column;
+	}
+}

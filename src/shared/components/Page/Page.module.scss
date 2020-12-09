@@ -1,0 +1,24 @@
+@import 'src/shared/styles/variables';
+
+.root {
+	width: $a4-width;
+	height: $a4-height;
+	display: flex;
+
+	background-color: #ffffff;
+	padding-left: $left-margin;
+	box-sizing: border-box;
+	.content {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		border-left: $left-margin solid $primary-blue;
+		padding: $vertical-margin 0;
+	}
+	@media not print {
+		margin: 8px 0;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	}
+}

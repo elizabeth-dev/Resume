@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.scss';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { CV } from './CV';
 
 import 'typeface-open-sans';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-serviceWorker.unregister();
+ReactDOM.render(<CV />, document.getElementById('root'));
