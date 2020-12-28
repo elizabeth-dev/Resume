@@ -28,7 +28,7 @@ export const description = 'Cuento con experiencia tanto en el desarrollo de mic
 
 export const experience: ISectionData[] = [
 	{
-		title: 'Desarrolladora Web - Full-stack',
+		title: 'Desarrolladora Full-stack',
 		info: [
 			{ icon: mdiCalendar, text: 'Octubre 2018 - Actualidad' },
 			{ icon: mdiDomain, text: 'Inetum' },
@@ -63,6 +63,10 @@ export const trainingData: ISectionData[] = [
 
 export const certData: ISectionData[] = [
 	{
+		title: 'Microsoft Azure Fundamentals',
+		info: [{ icon: mdiCalendar, text: 'Diciembre 2020 - Diciembre 2022' }],
+	},
+	{
 		title: 'Google Professional Cloud Architect',
 		info: [{ icon: mdiCalendar, text: 'Diciembre 2019 - Diciembre 2021' }],
 	},
@@ -78,13 +82,6 @@ export const certData: ISectionData[] = [
 				icon: mdiTrophy,
 				text: 'Modalidad TI Administración de sistemas',
 			},
-		],
-	},
-	{
-		title: 'Certificado de nivel intermedio B2 en la lengua inglesa',
-		info: [
-			{ icon: mdiCalendar, text: 'Mayo 2017' },
-			{ icon: mdiSchool, text: 'EOI Santa Cruz de Tenerife' },
 		],
 	},
 ];
