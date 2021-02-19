@@ -35,11 +35,9 @@ export const FirstPage: React.FC = () => {
 				))}
 			</Section>
 			<TagSection title="Idiomas">
-				{languages.map((lang) => (
-					<PropElement key={lang.title} subtitle={lang.subtitle}>
-						{lang.title}
-					</PropElement>
-				))}
+				{languages.map((lang) => (<PropElement key={lang.title} subtitle={lang.subtitle}>
+					{lang.title}
+				</PropElement>))}
 			</TagSection>
 		</Page>
 	);
