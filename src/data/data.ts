@@ -16,41 +16,65 @@ import { IPersonalData, ISectionData } from '../shared/types/Data';
 export const personalData: IPersonalData[] = [
 	{
 		icon: mdiHome,
-		content: 'Madrid, España',
-	}, {
+		content: 'Madrid, Spain',
+	},
+	{
 		icon: mdiPhone,
-		content: '611490147',
-		link: 'tel:611490147',
-	}, {
+		content: '(+34) 611490147',
+		link: 'tel:+34611490147',
+	},
+	{
 		icon: mdiEmail,
 		content: 'me@elizabeth.sh',
 		link: 'mailto:me@elizabeth.sh',
-	}, {
+	},
+	{
 		icon: mdiLinkedin,
 		content: 'elizabeth-dev',
 		link: 'https://linkedin.com/in/elizabeth-dev/',
-	}, {
+	},
+	{
 		icon: mdiGithub,
 		content: 'elizabeth-dev',
 		link: 'https://github.com/elizabeth-dev/',
 	},
 ];
 
-export const description = 'Cuento con experiencia tanto en el desarrollo de microservicios, mediante herramientas' + ' como Java, Spring, o Node.js, como aplicaciones front-end, especialmente a través de Angular o React.js.' + ' Además, últimamente he empezado a explorar opciones más novedosas, como Go o React Native.\nSoy una persona' + ' apasionada por las nuevas tecnologías, siempre dispuesta a seguir adquiriendo nuevas habilidades.';
+export const description =
+	'Full Stack Developer with experience in microservice development, mainly using Node.js and Go, and specially oriented towards event-driven architectures. Skilled in front-end development with React.js and Angular, and curious about mobile development, mainly on Android with React Native. Enthusiastic about new technologies and acquiring new skills.';
 
 export const experience: ISectionData[] = [
 	{
-		title: 'Desarrolladora Full-stack',
+		title: 'Senior Full Stack Developer',
 		info: [
 			{
 				icon: mdiCalendar,
-				text: 'Octubre 2018 - Actualidad',
-			}, {
+				text: 'April 2021 - Present',
+			},
+			{
+				icon: mdiDomain,
+				text: 'Sngular',
+			},
+			{
+				icon: mdiWrench,
+				text: 'Worked with a customer in the banking sector. The project required a high functional knowledge of the product, as the goal was to organize and standardize the internal development processes of the company. The tech stack mainly included Typescript and Vue, running in a Kubernetes cluster in GCP.',
+			},
+		],
+	},
+	{
+		title: 'Full Stack Developer',
+		info: [
+			{
+				icon: mdiCalendar,
+				text: 'October 2018 - April 2021',
+			},
+			{
 				icon: mdiDomain,
 				text: 'Inetum',
-			}, {
+			},
+			{
 				icon: mdiWrench,
-				text: 'Participación en diversos proyectos para cliente, que incluyen la evolución de un sistema de ventas mediante una arquitectura de microservicios con Java, y el desarrollo de un gestor de visitas y reserva de espacios, utilizando Angular para el cliente web, y un \nback-end serverless con Node.js.',
+				text: 'Worked in several projects, including an upgrade to a booking system into a microservice architecture in Java, and the development of a meeting rooms and working desks management system, using React.js and a serverless back-end in Node.js.',
 			},
 		],
 	},
@@ -58,23 +82,26 @@ export const experience: ISectionData[] = [
 
 export const trainingData: ISectionData[] = [
 	{
-		title: 'Técnico Superior en Desarrollo de Aplicaciones Web',
+		title: 'Associate Degree on Web Application Development',
 		info: [
 			{
 				icon: mdiCalendar,
-				text: 'Mayo 2019 - Junio 2020',
-			}, {
+				text: 'May 2019 - May 2021',
+			},
+			{
 				icon: mdiSchool,
-				text: 'Pruebas libres, IES El Cañaveral',
+				text: 'Open exams, IES El Cañaveral',
 			},
 		],
-	}, {
-		title: 'Técnico Superior en Administración de Sistemas Informáticos en Red',
+	},
+	{
+		title: 'Associate Degree on IT Systems Management',
 		info: [
 			{
 				icon: mdiCalendar,
-				text: 'Septiembre 2017 - Mayo 2019',
-			}, {
+				text: 'September 2017 - May 2019',
+			},
+			{
 				icon: mdiSchool,
 				text: 'IES Clara del Rey',
 			},
@@ -84,38 +111,42 @@ export const trainingData: ISectionData[] = [
 
 export const certData: ISectionData[] = [
 	{
-		title: 'Microsoft Azure Fundamentals',
-		info: [
-			{
-				icon: mdiCalendar,
-				text: 'Diciembre 2020 - Diciembre 2022',
-			},
-		],
-	}, {
 		title: 'Google Professional Cloud Architect',
 		info: [
 			{
 				icon: mdiCalendar,
-				text: 'Diciembre 2019 - Diciembre 2021',
+				text: 'December 2019 - December 2023',
 			},
 		],
-	}, {
+	},
+	{
 		title: 'Google Professional Cloud Security Engineer',
 		info: [
 			{
 				icon: mdiCalendar,
-				text: 'Diciembre 2019 - Diciembre 2021',
+				text: 'December 2019 - December 2023',
 			},
 		],
-	}, {
-		title: 'Olimpiadas nacionales de FP - Medalla de plata',
+	},
+	{
+		title: 'Microsoft Azure Fundamentals',
 		info: [
 			{
 				icon: mdiCalendar,
-				text: 'Marzo 2019',
-			}, {
+				text: 'December 2020 - December 2022',
+			},
+		],
+	},
+	{
+		title: 'Vocational Education Olympics - Silver Medal',
+		info: [
+			{
+				icon: mdiCalendar,
+				text: 'March 2019',
+			},
+			{
 				icon: mdiTrophy,
-				text: 'Modalidad TI Administración de Sistemas',
+				text: 'IT Network Systems Administration',
 			},
 		],
 	},
@@ -127,10 +158,11 @@ export const sideData: ISectionData[] = [
 		info: [
 			{
 				icon: mdiCalendar,
-				text: 'Diciembre 2019 - Actualidad',
-			}, {
+				text: 'December 2019 - Present',
+			},
+			{
 				icon: mdiInformationOutline,
-				text: 'Prueba de concepto de red social de microblogging. Incluye una aplicación móvil desarrollada en React Native, así como un prototipo de API monolítica en Node.js, en proceso de migración a Go para mayor eficiencia y escalabilidad.',
+				text: 'PoC for a microblogging social network, mainly for learning purposes. Includes a mobile app developed with React Native, and a monolithic back-end with Go using a DDD approach. May upgrade to a microservice architecture in the future, using event sourcing.',
 			},
 		],
 	},
@@ -146,17 +178,18 @@ export const knowledge: { title: string }[] = [
 	{ title: 'CI/CD' },
 	{ title: 'Cloud computing' },
 	{ title: 'Event sourcing' },
-	{ title: 'Programación reactiva' },
+	{ title: 'Reactive programming' },
 	{ title: 'Kubernetes' },
 	{ title: 'Node.js' },
 ];
 
 export const languages: { title: string; subtitle: string }[] = [
 	{
-		title: 'Español',
-		subtitle: 'Lengua nativa',
-	}, {
-		title: 'Inglés',
-		subtitle: 'Alto',
+		title: 'Spanish',
+		subtitle: 'Native',
+	},
+	{
+		title: 'English',
+		subtitle: 'High level',
 	},
 ];

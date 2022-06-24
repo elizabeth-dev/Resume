@@ -1,13 +1,10 @@
 import React from 'react';
-import styles from './FirstPage.module.scss';
-
+import { description, experience, personalData, trainingData } from '../../data/data';
 import { Page } from '../../shared/components/Page/Page.component';
 import { PersonalData } from '../../shared/components/PersonalData/PersonalData.component';
-import { SectionItem } from '../../shared/components/SectionItem/SectionItem.component';
-import { personalData, experience, trainingData, description, languages } from '../../data/data';
 import { Section } from '../../shared/components/Section/Section.component';
-import { TagSection } from '../../shared/components/TagSection/TagSection.component';
-import { PropElement } from '../../shared/components/PropElement/PropElement.component';
+import { SectionItem } from '../../shared/components/SectionItem/SectionItem.component';
+import styles from './FirstPage.module.scss';
 
 export const FirstPage: React.FC = () => {
 	return (
@@ -16,29 +13,16 @@ export const FirstPage: React.FC = () => {
 			<PersonalData data={personalData}>
 				<p className={styles.description}>{description}</p>
 			</PersonalData>
-			<Section title="Experiencia">
+			<Section title="Experience">
 				{experience.map((item) => (
-					<SectionItem
-						title={item.title}
-						info={item.info}
-						key={item.title}
-					/>
+					<SectionItem title={item.title} info={item.info} key={item.title} />
 				))}
 			</Section>
-			<Section title="Formación">
+			<Section title="Education">
 				{trainingData.map((data) => (
-					<SectionItem
-						title={data.title}
-						info={data.info}
-						key={data.title}
-					/>
+					<SectionItem title={data.title} info={data.info} key={data.title} />
 				))}
 			</Section>
-			<TagSection title="Idiomas">
-				{languages.map((lang) => (<PropElement key={lang.title} subtitle={lang.subtitle}>
-					{lang.title}
-				</PropElement>))}
-			</TagSection>
 		</Page>
 	);
 };
