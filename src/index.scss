@@ -9,12 +9,12 @@ body {
 	align-items: center;
 
 	background-color: #666666;
-	color-adjust: exact;
+	print-color-adjust: exact;
 
 	margin: 0;
 
-	font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-		'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	// -webkit-font-smoothing: antialiased;
 	// -moz-osx-font-smoothing: grayscale;
 	code {
