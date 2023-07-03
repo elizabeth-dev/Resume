@@ -1,0 +1,16 @@
+@import '@/styles/variables.scss';
+
+.root {
+	align-self: stretch;
+
+	background-color: $primary-blue;
+	padding: 0.25rem;
+	padding-left: $page-left-margin;
+	margin-left: -1px;
+	.text {
+		color: #ffffff;
+		font-size: 22px;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+}

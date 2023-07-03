@@ -1,0 +1,24 @@
+@import '@/styles/variables.scss';
+
+.root {
+	flex: 0 1 33.33%;
+	display: flex;
+	align-items: baseline;
+
+	margin: 4px 0;
+	svg {
+		color: $primary-blue;
+		align-self: center;
+	}
+	.title {
+		color: $primary-black;
+		margin-left: 0.25rem;
+		font-size: 1.125rem;
+	}
+	.subtitle {
+		color: $secondary-black;
+		margin-left: 0.5rem;
+		font-size: 1rem;
+		font-weight: 300;
+	}
+}

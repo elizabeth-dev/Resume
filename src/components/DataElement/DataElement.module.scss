@@ -1,0 +1,17 @@
+@import '@/styles/variables.scss';
+
+.root {
+	display: flex;
+	align-items: center;
+	svg {
+		color: $secondary-black;
+	}
+	.text {
+		margin-left: 0.5rem;
+		font-weight: 300;
+	}
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}

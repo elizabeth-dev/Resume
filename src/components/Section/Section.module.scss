@@ -1,0 +1,16 @@
+@import '@/styles/variables.scss';
+
+.root {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+
+	margin-top: $section-top-vertical-margin;
+	.section {
+		display: flex;
+		flex-direction: column;
+		margin: $section-vertical-margin 0;
+		align-self: stretch;
+		gap: 1.25rem;
+	}
+}

@@ -1,0 +1,22 @@
+@import '@/styles/variables.scss';
+
+$container-radius: 2rem;
+
+.root {
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+
+	padding: 1.25rem 1.5rem;
+	margin: 1.5rem 0 $page-vertical-margin $page-left-margin;
+	border: 1px solid $primary-blue;
+	border-right: none;
+	border-radius: $container-radius 0 0 $container-radius;
+	.keys {
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 0;
+		gap: 2px;
+		color: $primary-black;
+	}
+}

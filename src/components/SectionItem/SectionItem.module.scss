@@ -1,0 +1,51 @@
+@import '@/styles/variables.scss';
+
+.root {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0 $right-margin 0 $page-left-margin;
+	.title {
+		display: flex;
+		align-items: center;
+
+		margin-right: $right-margin * 2;
+		svg {
+			color: $primary-blue;
+			flex-shrink: 0;
+		}
+		.text {
+			font-size: 1.5rem;
+			color: $primary-black;
+		}
+	}
+	.info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 4px;
+
+		margin: 0.125rem 0 0 1.5rem;
+
+		.subtitle {
+			color: $secondary-black;
+			font-weight: 300;
+		}
+		.infoElement {
+			display: flex;
+			align-items: center;
+
+			svg {
+				color: $secondary-black;
+				flex-shrink: 0;
+				align-self: baseline;
+				margin-right: 0.5rem;
+			}
+			.text {
+				color: $primary-black;
+				font-weight: 300;
+				white-space: pre-line;
+			}
+		}
+	}
+}
